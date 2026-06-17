@@ -17,5 +17,19 @@ void setup() {
   delay(500);
 }
 
+void loop() {
+  // Послідовне миготіння: один за одним вперед
+  for (uint8_t i = 0; i < numLeds; i++) {
+    digitalWrite(ledPins[i], HIGH);
+    delay(300);
+    digitalWrite(ledPins[i], LOW);
+  }
 
+  // Послідовне миготіння: один за одним назад
+  for (int8_t i = numLeds - 2; i >= 1; i--) {
+    digitalWrite(ledPins[i], HIGH);
+    delay(300);
+    digitalWrite(ledPins[i], LOW);
+  }
+}
 
