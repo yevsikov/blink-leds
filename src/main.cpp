@@ -5,6 +5,9 @@ const uint8_t ledPins[] = {4, 5, 6, 7};
 const uint8_t numLeds = sizeof(ledPins) / sizeof(ledPins[0]);
 
 void setup() {
+  Serial.begin(115200);
+  Serial.println("--- Ініціалізація GPIO ---");
+
   for (uint8_t i = 0; i < numLeds; i++) {
     pinMode(ledPins[i], OUTPUT);
     digitalWrite(ledPins[i], LOW);
