@@ -6,11 +6,8 @@ This is a small educational project for the [Embedded Development course](https:
 
 ![ESP32 Blink Circuit](./scheme.png)
 
-## Result Video
+## Result
 
-<video controls width="640">
-  <source src="./video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Blink Result](./result.gif)
 
-If the embedded player is not available in your viewer, open the video directly: [video.mp4](./video.mp4)
+If GIF preview is not displayed in your viewer, open it directly: [result.gif](./result.gif)
